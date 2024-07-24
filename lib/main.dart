@@ -156,7 +156,7 @@ class HomePage extends StatelessWidget {
                           ),
                         ),
                         Text(
-                            '${BlocProvider.of<CounterCubit>(context).teamBPoints}',
+                          '${BlocProvider.of<CounterCubit>(context).teamBPoints}',
                           style: const TextStyle(
                             fontSize: 150,
                           ),
