@@ -72,7 +72,7 @@ class HomePage extends StatelessWidget {
                         FittedBox(
                           fit: BoxFit.contain,
                           child: Text(
-                            '$teamAPoints',
+                            '${BlocProvider.of<CounterCubit>(context).teamAPoints}',
                             style: const TextStyle(
                               fontSize: 150,
                             ),
@@ -156,7 +156,7 @@ class HomePage extends StatelessWidget {
                           ),
                         ),
                         Text(
-                          '$teamBPoints',
+                            '${BlocProvider.of<CounterCubit>(context).teamBPoints}',
                           style: const TextStyle(
                             fontSize: 150,
                           ),
